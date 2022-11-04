@@ -20,7 +20,7 @@ class CfgMainMenuSpotlight
     {
         text = "GTO Server";
         picture = "gtom\logo\gto_unit_logo.paa";
-        //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
+        // action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
         action = "connectToServer ['5.83.170.148', 21000, 'asdf0987']";
         actionText = "Join GTO Server";
         condition = "GTO_MenuButtonVisible";
@@ -30,13 +30,12 @@ class CfgMainMenuSpotlight
     {
         text = "FschJgRgt Server";
         picture = "gtom\logo\Fallschirmjagerregiment_42.paa";
-        //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
+        // action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
         action = "connectToServer ['185.240.242.109', 2302, 'FschJgRgt42']";
         actionText = "Join FschJgRgt Server";
         condition = "false";
     };
 
-    
     // class ApexProtocol { condition = "!(GTO_MenuButtonVisible)";};
     // class BootCamp { condition = "!(GTO_MenuButtonVisible)";};
     // class EastWind { condition = "!(GTO_MenuButtonVisible)";};
