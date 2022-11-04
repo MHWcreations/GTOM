@@ -23,7 +23,7 @@ class CfgMainMenuSpotlight
         //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
         action = "connectToServer ['5.83.170.148', 21000, 'asdf0987']";
         actionText = "Join GTO Server";
-        condition = "true";
+        condition = "GTO_MenuButtonVisible";
     };
 
     class JoinServerFschJgRgt
@@ -36,24 +36,25 @@ class CfgMainMenuSpotlight
         condition = "false";
     };
 
-    delete ApexProtocol;
-    delete BootCamp;
-    delete EastWind;
-    delete Orange_CampaignGerman;
-    delete Orange_Showcase_IDAP;
-    delete Orange_Showcase_LoW;
-    delete Showcase_TankDestroyers;
-    class Tacops_Campaign_01 { condition = "false";}; // Can´t be deleted
-    delete Tacops_Campaign_02;
-    delete Tacops_Campaign_03;
-    delete Tanks_Campaign_01;
-    delete gm_campaign_01;
-    delete Contact_Campaign;
-    delete OldMan;
-    delete SP_FD14;
-    delete Orange_Campaign;
-    delete AoW_Showcase_AOW;
-    delete AoW_Showcase_Future;
+    
+    // class ApexProtocol { condition = "!(GTO_MenuButtonVisible)";};
+    // class BootCamp { condition = "!(GTO_MenuButtonVisible)";};
+    // class EastWind { condition = "!(GTO_MenuButtonVisible)";};
+    // class Orange_CampaignGerman { condition = "!(GTO_MenuButtonVisible)";};
+    // class Orange_Showcase_IDAP { condition = "!(GTO_MenuButtonVisible)";};
+    // class Orange_Showcase_LoW { condition = "!(GTO_MenuButtonVisible)";};
+    // class Showcase_TankDestroyers { condition = "!(GTO_MenuButtonVisible)";};
+    // class Tacops_Campaign_01 { condition = "!(GTO_MenuButtonVisible)";}; // Can´t be deleted
+    // class Tacops_Campaign_02 { condition = "!(GTO_MenuButtonVisible)";};
+    // class Tacops_Campaign_03 { condition = "!(GTO_MenuButtonVisible)";};
+    // class Tanks_Campaign_01 { condition = "!(GTO_MenuButtonVisible)";};
+    // class gm_campaign_01 { condition = "!(GTO_MenuButtonVisible)";};
+    // class Contact_Campaign { condition = "!(GTO_MenuButtonVisible)";};
+    // class OldMan { condition = "!(GTO_MenuButtonVisible)";};
+    // class SP_FD14 { condition = "!(GTO_MenuButtonVisible)";};
+    // class Orange_Campaign { condition = "!(GTO_MenuButtonVisible)";};
+    // class AoW_Showcase_AOW { condition = "!(GTO_MenuButtonVisible)";};
+    // class AoW_Showcase_Future { condition = "!(GTO_MenuButtonVisible)";};
 };
 
 /*
